@@ -1,0 +1,158 @@
+---
+title: "Data Visualization Portfolio"
+author: "Andrew McCartney"
+output:   
+  html_document:
+    code_folding: hide
+    df_print: paged
+    fig_caption: yes
+    theme: journal
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '4'
+---
+
+## Classic Analyses
+
+### Hofstede
+
+I created this ridge-line plot in a proposal for a final project in my course on data management. Ultimately, [the project](https://github.com/McCartneyAC/Hofstede) combined Hofstadter's cultural dimensions with UN data on educational outcomes. 
+
+![](portfolio_images\\hoftstede.jpg)
+
+### SLC Housing
+
+A friend was concerned that she would not be able to find housing in Salt Lake City near to her work that was also affordable. I scraped craigslist housing data for SLC and graphed the cost of apartments by square feet, bedrooms, and haversine distance to her work site. 
+
+![](portfolio_images\\slc.jpg)
+
+
+### Shrinkage
+
+Covariates may experience shrinkage in linear mixed effects models based on the intraclass coefficient and the size of each cluster! This animation gives you an intuitive feel for the shrinkage factor relative to those hyper-parameters. 
+
+![](portfolio_images\\shrinkage.gif)
+
+### Effect Size of Growth over School Years 
+
+The so-called "teacher effect" or baseline growth of a student hovers around 0.30, so the going wisdom says. However, Bloom (2007) provided evidence that effect sizes and student growth differ year-to-year. His original analysis was in a table in a conference presentation, so I represented it graphically for a more intuitive feel. 
+
+![](portfolio_images\\hbloom2007.jpeg)
+
+## Fun stuff
+
+### Aeneid Dactyls
+
+This one was just for fun, using the R package "histData" full of historically famous data sets. 
+
+![](portfolio_images\\dactyls.png)
+
+### Network Diagrams
+
+For practice creating network diagrams, I took a map of dolphin friendships and an emoji library to represent each one. Don't ask me how much of my homework time I spent doing this instead during graduate school.  
+
+![](portfolio_images\\fishpond.jpeg)
+
+### Survey Crosstabs
+
+At UVA, I had the honor to be a member of the Honor Audit Commission's data analysis team. This mosaic plot represents the cross tabs on two important questions: is the system fair, and are the sanctions correct? 
+
+![](portfolio_images\\questions13 and 14.jpeg)
+
+### Vaccination and Political Orientation
+
+An NPR journalist made an [interactive](https://www.npr.org/2021/06/09/1004430257/theres-a-stark-red-blue-divide-when-it-comes-to-states-vaccination-rates) for an article, but I felt it was under-selling the main point. 
+
+![](portfolio_images\\vax_rates.png)
+
+
+## Geospatial Information
+
+
+### Tweets Mapping
+
+This was another just-for-fun project, but scraping twitter and using sentiment analysis are under-utilized skills for me so it was a joy to complete. 
+
+![](portfolio_images\\tweets_shutdown_map.png)
+
+### Violence in Somalia
+
+![](portfolio_images\\Greater_Somalia_2017.png)
+
+### Ebola Spread
+
+When meeting with the Red Cross' chief for the 2014-2016 west African Ebola outbreak, he utilized about a dozen slides in quick succession to animate the Ebola spread. I thought it would look better as a .gif; unfortunately, I never got around to showing him our team's work on this project.
+
+
+![](portfolio_images\\ebola.gif)
+
+## Behavior Management Tracking
+
+While a teacher at a small, private special education school, one of my ancillary tasks was to run all student data analysis, including assessments and behavior management data. This included an overhaul of the data management collection protocol (the point sheet) as well as looking for patterns in student behavior trends (the trajectories). 
+
+### The Point Sheet Dashboard
+
+![](portfolio_images\\fig1.png)
+
+### Points Trajectories
+
+Before I left this schoolsite, I was preparing a machine learning paper to see--is it possible to cluster students on behavior management system trajectory? And if so, what are the key characteristics of each cluster? 
+
+![](portfolio_images\\fig2.png)
+
+## Project Kaleidoscope
+
+### Participant flow
+
+Just how many students in the project fit into each treatment group, and which schools did they hail from? 
+
+![](portfolio_images\\idalluvial2.jpeg)
+
+
+### Code Co-Occurrences
+
+To assist the qualitative researchers on my team, I created a heat-map of code co-occurrences and then turned that into an animated web to allow for preliminary analysis of our qualitative data. 
+
+Click [here](portfolio_images\\codecooccurrence2016v2.html) to see the full document
+![](portfolio_images\\codeoccurrenceintro.jpeg)
+
+
+## Coronavirus
+
+Like many data-minded individuals, I spent a good portion of the initial lockdown setting up programmatic data visualizations that I could re-run regularly to check on the state of covid19 in the country and in my local area. Here are a few of these. 
+
+### Early Data
+![](portfolio_images\\crossnational.gif)
+
+![](portfolio_images\\us_it_animation.gif)
+![](portfolio_images\\unknown_pleasures.png)
+
+![](portfolio_images\\covid_us.png)
+
+### Local Rates
+Eventually I settled on just making sure that I knew what my local area rates were, and provided this service to others as well:
+![](portfolio_images\\ithaca_jenni_1.jpg)
+![](portfolio_images\\nova_ridgeline.png)
+
+
+
+## Miscellaneous
+
+### Afghan Girls
+
+![](portfolio_images\\afghan_missing_school.png)
+
+### Political Compass in the Primaries
+
+The wildly memetic [political compass](https://www.politicalcompass.org) lets users figure out where they stand relative to political figures. I created a voronoi diagram (within a shiny app) to allow users to plot their own results and see which politician is closest to them. 
+
+![](portfolio_images\\voronoi.png)
+
+### Virginia Colleges
+
+This was a one-off for proving a point (which I now forget) in a class discussion on the economics of higher education. 
+
+![](portfolio_images\\va_rates.jpeg)
