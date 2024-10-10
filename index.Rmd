@@ -4,8 +4,6 @@ image: "DSC_4304.jpg"
 links:
   - label: LinkedIn
     url: "https://www.linkedin.com/in/andrew-mccartney-81082a10/"
-  - label: Twitter
-    url: "https://twitter.com/wouldeye125"
   - label: GitHub
     url: "https://github.com/McCartneyAC"
   - label: Email
@@ -21,6 +19,7 @@ output:
 I am a Special Education teacher by training with a serious passion for data. My mission is to build your capacity to get up and running with your data and take the hassle out of trying to figure out what to do with all those numbers you've collected. My secondary mission is to make the prettiest possible data visualization. In my spare time, I like to hike, camp, birdwatch, and take photographs. 
 
 #### [Data Visualization Portfolio](portfolio.html)
+#### [See an Example Workflow](denvergroceries.html)
 
 ## Education
 
@@ -41,11 +40,19 @@ Master of Education: Curriculum and Instruction
 Bachelor of Arts: Psychology
 
 ## Experience
-**Fairfax County Public Schools** | 2020-Present
+**The British International School of Ukraine**  | 2024 - Present
+
+Computer Science Teacher
+
+**Bard High School Early College DC**  | 2022-2024
+
+Mathematics Department Chair
+
+**Fairfax County Public Schools** | 2021-2022
 
 Homebound Instructor
 
-**The Kellar School of Inova Kellar Center** | 2019-2020
+**The Kellar School of Inova Kellar Center** | 2019-2021
 
 Special Education Teacher
 
