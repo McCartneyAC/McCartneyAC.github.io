@@ -4,9 +4,6 @@ personal website / business card
 
 # Feedback to-do list. 
 
-## Laura
-I think this sentence is a little wordy and it was hard to follow at the beginning. "My mission is to build your capacity to get up and running with your data and take the hassle out of trying to figure out what to do with all those numbers you’ve collected." Put the portfolio link at the top instead of the bottom. I like the portfolio but would add horizontal lines to separate the sections
-
 ## Arielle
 agree with lor’s thought about the mission statement. some thoughts… 
 it sounds like basically you’re saying you want to help them take a pile of data and turn it into something useful, and also to empower them to run with what you build. is that accurate?
