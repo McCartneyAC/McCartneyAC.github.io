@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<style>
+  /* The whole “iPhone canvas” */
+.flyer {
+  width: 1179px;
+  height: 2000px;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+
+/* keep common bg settings */
+.top, .bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* top image: fixed height */
+.top {
+  top: 0;
+  height: 1400px;
+  background-image: url("000074270009.jpg");
+  z-index: 1;
+}
+
+/* bottom image: start earlier (overlap upward) */
+.bottom {
+  top: 1000px;           /* <-- key: overlap. (1400 - overlapAmount) */
+  height: 1000px;         /* 2000 - 1200 */
+  background-image: url("000036530002.jpg");
+  z-index: 2;
+
+  /* <-- key: feather the TOP of the bottom image */
+  -webkit-mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(0,0,0,1) 25%,
+    rgba(0,0,0,1) 100%
+  );
+  mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(0,0,0,1) 25%,
+    rgba(0,0,0,1) 100%
+  );
+}
+
+  /* Middle fade-to-black band (sits over images) */
+  .band {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2000px; /* tweak */
+    /* darkest in the middle, feather out */
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0),
+      rgba(0,0,0,0),
+      rgba(0,0,0,0),
+      rgba(0,0,0,0.92) 35%,
+      rgba(0,0,0,0.92) 55%,
+      rgba(0,0,0,0),
+      rgba(0,0,0,0)
+    );
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  /* Your white text on top */
+  .text {
+    position: absolute;
+    left: 70px;
+    right: 70px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 10;
+  }
+
+  .text h1 {
+    margin: 0 0 18px;
+    font-size: 90px;
+    letter-spacing: 0.02em;
+    font-family: "Nova Oval", system-ui;
+  }
+
+
+/* NEW: fade bottom photo upward into black */
+.bottom::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.0) 35%,
+    rgba(0,0,0,0.85) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+  .text p {
+    margin: 0;
+    font-size: 44px;
+    line-height: 1.25;
+    opacity: 0.95;
+    font-family: Raleway;
+  }
+</style>
+</head>
+<body>
+  <div class="flyer">
+    <div class="top"></div>
+    <div class="bottom"></div>
+
+    <div class="band"></div>
+
+    <div class="text">
+      <h1>Crash<br>Course<br>Ukrainian<br>Dance<br></h1>
+<br>
+      <p>Learn to dance traditional Ukrainian social dance with us! This crash course is intended for foreigners and beginners who want to learn the basic steps (in English!) so that they can participate in biweekly folk dance parties. </p>
+<p>Date: TBD /// Time: TBD /// Location: TBD</p>
+
+<p>Feel Free to bring a friend! Reach out with questions to @Bohdana @Andrew @Anastasiia</p>
+    </div>
+  </div>
+</body>
+</html>
